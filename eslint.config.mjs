@@ -13,10 +13,7 @@ export default [
         files: ['**/*.{js,mjs}'],
         languageOptions: {
             ecmaVersion: 'latest', sourceType: 'script',
-            globals: {
-                ...globals.browser, ...globals.greasemonkey, ...globals.node,  chatgpt: 'readonly', chrome: 'readonly',
-                config: 'writable', dom: 'readonly', icons: 'writable', modals: 'writable', settings: 'writable'
-            }
+            globals: { ...globals.browser, ...globals.node, chrome: 'readonly', deepseek: 'readonly' }
         },
         plugins: { 'import': importPlugin, 'js-styles': stylisticJS, regexp },
         rules: {
@@ -39,7 +36,7 @@ export default [
             'no-unused-vars': ['error', { 'caughtErrors': 'none' }] // allow unused named args in catch blocks
         }
     },
-    { files: ['**/chatgpt.js'], languageOptions: { globals: { chatgpt: 'off' }}},
+    { files: ['**/deepseek.js'], languageOptions: { globals: { deepseek: 'off' }}},
     { files: ['**/*.json'], language: 'json/json', ...json.configs.recommended },
     {
         files: ['**/*.md'], language: 'markdown/commonmark', plugins: { markdown },
