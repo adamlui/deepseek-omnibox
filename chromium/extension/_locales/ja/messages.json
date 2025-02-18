@@ -1,0 +1,5 @@
+{
+  "appName": { "message": "DeepSeekアドレスバー" },
+  "appAuthor": { "message": "Adam Lui" },
+  "appDesc": { "message": "アドレスバーに@deepseekと入力して、DeepSeekから回答を取得します" }
+}

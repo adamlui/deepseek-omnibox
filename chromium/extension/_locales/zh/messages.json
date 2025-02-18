@@ -1,0 +1,5 @@
+{
+  "appName": { "message": "DeepSeek 多功能框" },
+  "appAuthor": { "message": "Adam Lui" },
+  "appDesc": { "message": "在地址栏中输入 @deepseek 以从 DeepSeek 获得答案" }
+}

@@ -1,0 +1,5 @@
+{
+  "appName": { "message": "DeepSeek cím- és keresősáv" },
+  "appAuthor": { "message": "Adam Lui" },
+  "appDesc": { "message": "Írja be a @deepseek parancsot a címsávba, hogy válaszokat kapjon a DeepSeek-től" }
+}

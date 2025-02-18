@@ -1,0 +1,5 @@
+{
+  "appName": { "message": "DeepSeek Omnibox" },
+  "appAuthor": { "message": "Adam Lui" },
+  "appDesc": { "message": "Odpovědi od DeepSeek získáte zadáním @deepseek do adresního řádku" }
+}

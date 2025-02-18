@@ -1,0 +1,5 @@
+{
+  "appName": { "message": "DeepSeek 검색주소창" },
+  "appAuthor": { "message": "아담 루이" },
+  "appDesc": { "message": "주소창에 @deepseek를 입력하여 DeepSeek로부터 답변을 받습니다" }
+}

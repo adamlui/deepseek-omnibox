@@ -1,0 +1,5 @@
+{
+  "appName": { "message": "แถบอเนกประสงค์ DeepSeek" },
+  "appAuthor": { "message": "อดัมลุย" },
+  "appDesc": { "message": "พิมพ์ @deepseek ในแถบที่อยู่เพื่อรับคำตอบจาก DeepSeek" }
+}

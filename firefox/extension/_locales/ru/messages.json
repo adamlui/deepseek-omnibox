@@ -1,0 +1,5 @@
+{
+  "appName": { "message": "Омнибокс DeepSeek" },
+  "appAuthor": { "message": "Адам Луи" },
+  "appDesc": { "message": "Введите @deepseek в адресной строке, чтобы получить ответы от DeepSeek" }
+}
