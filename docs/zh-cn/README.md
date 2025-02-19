@@ -1,3 +1,15 @@
+<div align="right">
+    <h6>
+        <picture>
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://assets.aiwebextensions.com/images/icons/earth/black/icon32.svg">
+        </picture>
+        &nbsp;简体中文 |
+        <a href="../../#readme">English</a> |
+        <a href="../hi/#readme">हिंदी</a>
+    </h6>
+</div>
+
 <div align="center">
  
 <img width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/tiles/marquee/chrome/tile1400x560.png">
