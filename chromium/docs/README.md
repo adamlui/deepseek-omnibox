@@ -22,7 +22,7 @@
 
 ## 💡 About
 
-**Deepseek Omnibox** is a lightweight, easy-to-use extension that fetches AI search results from DeepSeek AI.
+**Deepseek Omnibox** is a lightweight, easy-to-use extension that fetches answers from DeepSeek AI.
 
 - **Easy to use —** Just type `@deepseek` in address bar + query
 - **Super lightweight —** < 100 KB
