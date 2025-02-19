@@ -21,7 +21,7 @@
 **deepseek Omnibox** is a lightweight, easy-to-use extension that fetches AI search results from DeepSeek AI.
 
 - **Easy to use —** Just type `@deepseek` in address bar + query
-- **Super lightweight —** Only 75 KB
+- **Super lightweight —** < 100 KB
 - **Multi-browser support —** Firefox + all Chromium browsers supported (e.g. Chrome + Edge + Opera)
 - **Privacy first —** No personal data collected
 
