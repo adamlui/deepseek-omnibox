@@ -3,7 +3,7 @@
   "name": "__MSG_appName__",
   "short_name": "DeepSeek 🔎",
   "description": "__MSG_appDesc__",
-  "version": "2025.2.20",
+  "version": "2025.2.20.1",
   "author": "Adam Lui",
   "homepage_url": "https://github.com/adamlui/deepseek-omnibox",
   "default_locale": "en",
