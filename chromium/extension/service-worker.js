@@ -5,12 +5,10 @@ chrome.action.onClicked.addListener(() => chrome.tabs.create({ url: deepseekChat
 
 // Query DeepSeek on omnibox query submitted
 chrome.omnibox.onInputEntered.addListener(query => {
-    chrome.tabs.update({ url: deepseekChatURL }, async tab => {
-        await new Promise(resolve => // after chat page finishes loading
+    chrome.tabs.update({ url: deepseekChatURL }, tab => {
+        new Promise(resolve => // after chat page finishes loading
             chrome.tabs.onUpdated.addListener(function loadedListener(tabId, info) {
-                if (info.status == 'complete') {
-                    chrome.tabs.onUpdated.removeListener(loadedListener) ; setTimeout(resolve, 2500)
-        }}))
-        chrome.tabs.sendMessage(tab.id, { query: query })
+                if (info.status == 'complete') chrome.tabs.onUpdated.removeListener(loadedListener) ; resolve()
+        })).then(() => chrome.tabs.sendMessage(tab.id, query))
     })
 })
