@@ -7,6 +7,6 @@ chrome.action.onClicked.addListener(() => chrome.tabs.create({ url: deepseekChat
 chrome.tabs.onUpdated.addListener((tabId, info, tab) => {
     if (info.status == 'complete' && tab.url.startsWith(deepseekChatURL)) {
         const query = new URL(tab.url).searchParams.get('q')
-        if (query) chrome.tabs.sendMessage(tabId, { query: query })
+        if (query) chrome.tabs.sendMessage(tabId, query)
     }
 })
