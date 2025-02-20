@@ -4,7 +4,7 @@ const deepseekChatURL = 'https://chat.deepseek.com'
 chrome.action.onClicked.addListener(() => chrome.tabs.create({ url: deepseekChatURL }))
 
 // Query DeepSeek on omnibox query submitted
-chrome.tabs.onUpdated.addListener((tabId, info, tab) => {
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status == 'complete' && tab.url.startsWith(deepseekChatURL)) {
         const query = new URL(tab.url).searchParams.get('q')
         if (query) chrome.tabs.sendMessage(tabId, query)
