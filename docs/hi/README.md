@@ -37,7 +37,7 @@
 - **उपयोग में आसान —** बस एड्रेस बार + क्वेरी में `@deepseek` टाइप करें
 - **सुपर लाइटवेट —** < 100 KB
 - **मल्टी-ब्राउज़र सपोर्ट —** Firefox + सभी Chromium ब्राउज़र समर्थित (जैसे Chrome + Edge + Opera)
-- **गोपनीयता पहले —** कोई व्यक्तिगत डेटा एकत्र नहीं किया जाता
+- **गोपनीयता केंद्रित —** कोई व्यक्तिगत डेटा एकत्र नहीं किया जाता
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/separators/aqua-gradient.png">
 

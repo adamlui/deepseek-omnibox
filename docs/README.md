@@ -37,7 +37,7 @@
 - **Easy to use —** Just type `@deepseek` in address bar + query
 - **Super lightweight —** < 100 KB
 - **Multi-browser support —** Firefox + all Chromium browsers supported (e.g. Chrome + Edge + Opera)
-- **Privacy first —** No personal data collected
+- **Privacy focused —** No personal data collected
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/separators/aqua-gradient.png">
 
