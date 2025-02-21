@@ -38,7 +38,7 @@
 
 - **易于使用 —** 只需在地址栏 + 查询中输入 `@deepseek`
 - **超轻量 —** < 100 KB
-- **多浏览器支持 —** 支持所有 Chromium 浏览器（例如 Chrome + Edge + Opera）
+- **多浏览器支持 —** 支持所有 Chromium 浏览器（例如 Chrome, Edge, Opera）
 - **注重隐私 —** 不收集任何个人数据
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/separators/aqua-gradient.png">
