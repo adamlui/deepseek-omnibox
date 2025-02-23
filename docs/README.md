@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/icons/earth/white/icon32.svg">
-            <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/icons/earth/black/icon32.svg">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.deepseekomnibox.com/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://assets.deepseekomnibox.com/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;English |
         <a href="zh-cn/#readme">简体中文</a> |
@@ -12,7 +12,7 @@
 
 <div align="center">
  
-<img width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/tiles/marquee/chrome/tile1400x560.png">
+<img width="100%" src="https://assets.deepseekomnibox.com/images/tiles/marquee/chrome/tile1400x560.png">
 <br><br>
 
 <a href="../LICENSE.md">
@@ -23,10 +23,10 @@
     <img alt="[SonarCloud vulnerabilities]" height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_deepseek-omnibox%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></img></a>
 <br><br>
 
-<a href="https://chromewebstore.google.com/detail/deepseek-omnibox/gcgfmipiaiopmjcmggnnehnehhdjdkgi?utm_source=github&utm_medium=readme&utm_content=platform-badge">
-    <img alt="[Get for Chrome]" width=auto height=60 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/badges/chrome-web-store/available-in-the-chrome-web-store-green-square-border-light-498x152.png"></a>
-<a href="https://addons.mozilla.org/firefox/addon/deepseek-omnibox">
-    <img alt="[Get for Firefox]" width=auto height=60 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/badges/firefox/available-for-firefox/raspberry-border-334x128.png"></a>
+<a href="https://chrome.deepseekomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-badge">
+    <img alt="[Get for Chrome]" width=auto height=60 src="https://assets.deepseekomnibox.com/images/badges/chrome-web-store/available-in-the-chrome-web-store-green-square-border-light-498x152.png"></a>
+<a href="https://ff.deepseekomnibox.com">
+    <img alt="[Get for Firefox]" width=auto height=60 src="https://assets.deepseekomnibox.com/images/badges/firefox/available-for-firefox/raspberry-border-334x128.png"></a>
 
 </div>
 
@@ -39,7 +39,7 @@
 - **Multi-browser support —** Firefox + all Chromium browsers supported (e.g. Chrome, Edge, Opera)
 - **Privacy focused —** No personal data collected
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/separators/aqua-gradient.png">
+<img height=6px width="100%" src="https://assets.deepseekomnibox.com/images/separators/aqua-gradient.png">
 
 <a href="https://github.com/adamlui/deepseek-omnibox/issues">Get support</a> /
 <a href="https://github.com/adamlui">Contact author</a> /
