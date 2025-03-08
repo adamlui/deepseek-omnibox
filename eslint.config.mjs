@@ -13,7 +13,7 @@ export default [
         files: ['**/*.{js,mjs}'],
         languageOptions: {
             ecmaVersion: 'latest', sourceType: 'script',
-            globals: { ...globals.browser, ...globals.node, chrome: 'readonly', deepseek: 'readonly' }
+            globals: { ...globals.browser, ...globals.node, chrome: 'readonly', deepseek: 'readonly', dom: 'readonly' }
         },
         plugins: { 'import': importPlugin, 'js-styles': stylisticJS, regexp },
         rules: {
