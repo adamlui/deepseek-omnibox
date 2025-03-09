@@ -1,5 +1,6 @@
 {
   "appName": { "message": "DeepSeek Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Ikteb @deepseek fil-bar tal-indirizzi biex tikseb tweġibiet mingħand DeepSeek" }
+  "appDesc": { "message": "Ikteb @deepseek fil-bar tal-indirizzi biex tikseb tweġibiet mingħand DeepSeek" },
+  "prefix_ask": { "message": "PKO" }
 }

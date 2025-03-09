@@ -1,5 +1,6 @@
 {
   "appName": { "message": "DeepSeek Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "ປະເພດ @deepseek ໃນແຖບທີ່ຢູ່ເພື່ອຮັບ ຄໍາ ຕອບຈາກ DeepSeek" }
+  "appDesc": { "message": "ປະເພດ @deepseek ໃນແຖບທີ່ຢູ່ເພື່ອຮັບ ຄໍາ ຕອບຈາກ DeepSeek" },
+  "prefix_ask": { "message": "ຖາມ" }
 }

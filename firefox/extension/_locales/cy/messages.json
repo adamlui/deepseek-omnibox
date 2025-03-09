@@ -1,5 +1,6 @@
 {
   "appName": { "message": "DeepSeek Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Teipiwch @deepseek yn y bar cyfeiriad i gael atebion gan DeepSeek" }
+  "appDesc": { "message": "Teipiwch @deepseek yn y bar cyfeiriad i gael atebion gan DeepSeek" },
+  "prefix_ask": { "message": "Gofyn" }
 }

@@ -1,5 +1,6 @@
 {
   "appName": { "message": "DeepSeek Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Skriv @deepseek i adressefeltet for å få svar fra DeepSeek" }
+  "appDesc": { "message": "Skriv @deepseek i adressefeltet for å få svar fra DeepSeek" },
+  "prefix_ask": { "message": "Ask" }
 }

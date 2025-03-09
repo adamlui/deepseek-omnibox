@@ -1,5 +1,6 @@
 {
   "appName": { "message": "סרגל הכתובות DeepSeek" },
   "appAuthor": { "message": "אדם לואי" },
-  "appDesc": { "message": "הקלד @deepseek בסרגל הכתובות כדי לקבל תשובות מ - DeepSeek" }
+  "appDesc": { "message": "הקלד @deepseek בסרגל הכתובות כדי לקבל תשובות מ - DeepSeek" },
+  "prefix_ask": { "message": "לשאול" }
 }

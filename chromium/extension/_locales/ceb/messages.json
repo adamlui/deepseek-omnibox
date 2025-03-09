@@ -1,5 +1,6 @@
 {
   "appName": { "message": "DeepSeek Omnibox" },
   "appAuthor": { "message": "Adan Lui" },
-  "appDesc": { "message": "Pag-type sa @deepseek sa address bar aron makakuha mga tubag gikan sa DeepSeek" }
+  "appDesc": { "message": "Pag-type sa @deepseek sa address bar aron makakuha mga tubag gikan sa DeepSeek" },
+  "prefix_ask": { "message": "Dugay ra" }
 }

@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Omnibox" },
   "appAuthor": { "message": "City in Illinois, United States" },
-  "appDesc": { "message": "In Aderesi Umurongo Kuri Kubona Bivuye" }
+  "appDesc": { "message": "In Aderesi Umurongo Kuri Kubona Bivuye" },
+  "prefix_ask": { "message": "Public files of %s%.0s" }
 }

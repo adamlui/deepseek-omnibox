@@ -1,5 +1,6 @@
 {
   "appName": { "message": "DeepSeek Omnibox" },
   "appAuthor": { "message": "Ադամ Լուի" },
-  "appDesc": { "message": "Մուտքագրեք @deepseek հասցեի տողում ՝ DeepSeek - ից պատասխաններ ստանալու համար" }
+  "appDesc": { "message": "Մուտքագրեք @deepseek հասցեի տողում ՝ DeepSeek - ից պատասխաններ ստանալու համար" },
+  "prefix_ask": { "message": "Հարցնել" }
 }

@@ -1,5 +1,6 @@
 {
   "appName": { "message": "DeepSeek višenamjenski okvir" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Unesite @deepseek u adresnu traku da biste dobili odgovore od DeepSeek-a" }
+  "appDesc": { "message": "Unesite @deepseek u adresnu traku da biste dobili odgovore od DeepSeek-a" },
+  "prefix_ask": { "message": "Pitaj" }
 }

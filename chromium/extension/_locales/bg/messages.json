@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Омнибокс за DeepSeek" },
   "appAuthor": { "message": "Адам Луи" },
-  "appDesc": { "message": "Въведете @deepseek в адресната лента, за да получите отговори от DeepSeek" }
+  "appDesc": { "message": "Въведете @deepseek в адресната лента, за да получите отговори от DeepSeek" },
+  "prefix_ask": { "message": "Искайте" }
 }

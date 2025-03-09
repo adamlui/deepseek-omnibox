@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Кутија за сешто за DeepSeek" },
   "appAuthor": { "message": "Адам Луј" },
-  "appDesc": { "message": "Напишете @deepseek во лентата за адреси за да добиете одговори од DeepSeek" }
+  "appDesc": { "message": "Напишете @deepseek во лентата за адреси за да добиете одговори од DeepSeek" },
+  "prefix_ask": { "message": "Прашај" }
 }
