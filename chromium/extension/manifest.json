@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_appName__",
-  "short_name": "DeepSeek 🔎",
+  "short_name": "__MSG_prefix_ask__ DeepSeek AI",
   "description": "__MSG_appDesc__",
   "version": "2025.3.9.3",
   "author": "Adam Lui",
@@ -14,7 +14,7 @@
     "64": "icons/icon64.png",
     "128": "icons/icon128.png"
   },
-  "action": { "default_title": "Ask DeepSeek" },
+  "action": { "default_title": "__MSG_prefix_ask__ DeepSeek AI" },
   "omnibox": { "keyword" : "@deepseek" },
   "web_accessible_resources": [{ "matches": [ "<all_urls>" ], "resources": [ "lib/deepseek.js", "lib/dom.js" ]}],
   "content_scripts": [{

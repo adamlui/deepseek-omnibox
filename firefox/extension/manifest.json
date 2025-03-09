@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_appName__",
-  "short_name": "DeepSeek 🔎",
+  "short_name": "__MSG_prefix_ask__ DeepSeek AI",
   "description": "__MSG_appDesc__",
   "version": "2025.3.8",
   "author": "Adam Lui",
@@ -14,10 +14,10 @@
     "64": "icons/icon64.png",
     "128": "icons/icon128.png"
   },
-  "action": { "default_title": "Ask DeepSeek" },
+  "action": { "default_title": "__MSG_prefix_ask__ DeepSeek AI" },
   "chrome_settings_overrides": {
     "search_provider": {
-      "name": "Ask DeepSeek",
+      "name": "DeepSeek AI",
       "search_url": "https://chat.deepseek.com?q={searchTerms}",
       "favicon_url": "icons/icon16.png",
       "keyword": "@deepseek",
