@@ -19,7 +19,7 @@
     "search_provider": {
       "name": "Ask DeepSeek",
       "search_url": "https://chat.deepseek.com?q={searchTerms}",
-      "favicon_url": "icons/icon16.png",
+      "favicon_url": "https://assets.deepseekomnibox.com/images/icons/deepseek/purple/icon16.png?v=81d43cb",
       "keyword": "@deepseek",
       "is_default": false
     }
