@@ -4,9 +4,13 @@ const deepseekChatURL = 'https://chat.deepseek.com'
 chrome.action.onClicked.addListener(() => chrome.tabs.create({ url: deepseekChatURL }))
 
 // Query DeepSeek on omnibox query submitted
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    if (changeInfo.status == 'complete' && tab.url.startsWith(deepseekChatURL)) {
-        const query = new URL(tab.url).searchParams.get('q')
-        if (query) chrome.tabs.sendMessage(tabId, query)
-    }
+chrome.omnibox.onInputEntered.addListener(query => {
+    chrome.tabs.update({ url: deepseekChatURL }, async tab => {
+        await new Promise(resolve => // after chat page finishes loading
+            chrome.tabs.onUpdated.addListener(function loadedListener(tabId, info) {
+                if (info.status == 'complete') {
+                    chrome.tabs.onUpdated.removeListener(loadedListener) ; setTimeout(resolve, 500)
+        }}))
+        chrome.tabs.sendMessage(tab.id, query)
+    })
 })
