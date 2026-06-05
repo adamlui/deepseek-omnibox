@@ -17,14 +17,14 @@ jobs:
     steps:
 
       - name: Checkout adamlui/deepseek-omnibox
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6.0.3
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           path: adamlui/deepseek-omnibox
           fetch-depth: 2
 
       - name: Checkout adamlui/ai-web-extensions
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6.0.3
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           repository: adamlui/ai-web-extensions
