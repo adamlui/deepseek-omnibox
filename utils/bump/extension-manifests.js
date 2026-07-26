@@ -17,6 +17,9 @@
         noCommit: args.some(arg => ['--no-commit', '-nc'].includes(arg)),
         noPush: args.some(arg => ['--no-push', '-np'].includes(arg))
     }
+    const gitCmd =
+        process.platform == 'win32' ? execSync('where git', { encoding: 'utf8' }).trim().split('\n')[0] || 'git'
+                        /* linux */ : '/usr/bin/git'
 
     // Import LIBS
     const fs = require('fs'), // to read/write files
@@ -50,7 +53,7 @@
         if (!config.chromiumOnly && !config.ffOnly) {
             console.log(`Checking last commit details for ${platformManifestPath}...`)
             try {
-                const latestCommitMsg = spawnSync('git',
+                const latestCommitMsg = spawnSync(gitCmd,
                     ['log', '-1', '--format=%s', '--', path.relative(process.cwd(), path.dirname(manifestPath))],
                     { encoding: 'utf8' }
                 ).stdout.trim()
@@ -86,9 +89,6 @@
         // git add/commit/push
         try {
             execSync('git add ./**/manifest.json')
-            const gitCmd =
-                process.platform == 'win32' ? execSync('where git', { encoding: 'utf8' }).trim().split('\n')[0] || 'git'
-                                /* linux */ : '/usr/bin/git'
             spawnSync(gitCmd, [
                 '-c', `user.signingkey=${initKudoSyncBot()}`, 'commit', '-n', '-m', commitMsg
             ], { stdio: 'inherit', encoding: 'utf-8' })
