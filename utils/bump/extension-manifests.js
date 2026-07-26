@@ -9,7 +9,7 @@
 (async () => {
     'use strict'
 
-    // Parse ARGS
+    const gitCmd = process.platform == 'win32' ? 'git' : /* linux */ '/usr/bin/git'
     const args = process.argv.slice(2)
     const config = {
         chromiumOnly: args.some(arg => /chrom/i.test(arg)),
@@ -17,7 +17,6 @@
         noCommit: args.some(arg => ['--no-commit', '-nc'].includes(arg)),
         noPush: args.some(arg => ['--no-push', '-np'].includes(arg))
     }
-    const gitCmd = process.platform == 'win32' ? 'git' : /* linux */ '/usr/bin/git'
 
     // Import LIBS
     const fs = require('fs'), // to read/write files
