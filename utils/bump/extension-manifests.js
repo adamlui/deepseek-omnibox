@@ -86,7 +86,10 @@
         // git add/commit/push
         try {
             execSync('git add ./**/manifest.json')
-            spawnSync('/usr/bin/git', [
+            const gitCmd =
+                process.platform == 'win32' ? execSync('where git', { encoding: 'utf8' }).trim().split('\n')[0] || 'git'
+                                /* linux */ : '/usr/bin/git'
+            spawnSync(gitCmd, [
                 '-c', `user.signingkey=${initKudoSyncBot()}`, 'commit', '-n', '-m', commitMsg
             ], { stdio: 'inherit', encoding: 'utf-8' })
             console.log('') // line break
