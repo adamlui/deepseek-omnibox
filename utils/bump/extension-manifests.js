@@ -99,7 +99,7 @@
             }
             bump.log.success(`Success! ${Object.keys(bumpedManifests).length} manifest${pluralSuffix} updated${
                 !config.noCommit ? '/committed' : '' }${ !config.noPush ? '/pushed' : '' } to GitHub`)
-        } catch (err) { bump.log.error('Git operation failed: ' + err.message) }
+        } catch (err) { bump.log.error(`Git operation failed: ${err.message}`) }
     }
 
     // Final SUMMARY log
