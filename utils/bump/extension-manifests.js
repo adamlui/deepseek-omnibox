@@ -50,9 +50,10 @@
         if (!config.chromiumOnly && !config.ffOnly) {
             console.log(`Checking last commit details for ${platformManifestPath}...`)
             try {
-                const latestCommitMsg = spawnSync(gitCmd, [
-                    'log', '-1', '--format=%s', '--', path.relative(process.cwd(), path.dirname(manifestPath))
-                ], { encoding: 'utf8' }).stdout.trim()
+                const latestCommitMsg = spawnSync(gitCmd,
+                    ['log', '-1', '--format=%s', '--', path.relative(process.cwd(), path.dirname(manifestPath))],
+                    { encoding: 'utf8' }
+                ).stdout.trim()
                 bump.log.hash(`${latestCommitMsg}\n`)
                 if (/bump.*(?:ersion|manifest)/i.test(latestCommitMsg)) {
                     console.log('No changes found. Skipping...\n')
@@ -80,19 +81,23 @@
         bump.log.working(`\nCommitting bump${pluralSuffix} to git...\n`)
 
         // Init commit msg
-        let commitMsg = 'Bumped `version`' ; const uniqueVers = {}
+        const uniqueVers = {}
+        let commitMsg = 'Bumped `version`'
         Object.values(bumpedManifests).forEach(vers => {
-            const newVer = vers.split(';')[1] ; uniqueVers[newVer] = true })
-        if (Object.keys(uniqueVers).length == 1)
+            const newVer = vers.split(';')[1]
+            uniqueVers[newVer] = true
+        })
+        if (Object.keys(uniqueVers).length === 1)
             commitMsg += ` to \`${Object.keys(uniqueVers)[0]}\``
 
         // git add/commit/push
         try {
             spawnSync(gitCmd, ['add', ...Object.keys(bumpedManifests)], { stdio: 'inherit', encoding: 'utf-8' })
-            spawnSync(gitCmd, [
-                '-c', `user.signingkey=${initKudoSyncBot()}`, 'commit', '-n', '-m', commitMsg
-            ], { stdio: 'inherit', encoding: 'utf-8' })
-            console.log('') // line break
+            spawnSync(gitCmd,
+                ['-c', `user.signingkey=${initKudoSyncBot()}`, 'commit', '-n', '-m', commitMsg],
+                { stdio: 'inherit', encoding: 'utf-8' }
+            )
+            bump.log.break()
             if (!config.noPush) {
                 bump.log.working('\nPulling latest changes from remote to sync local repository...\n')
                 spawnSync(gitCmd, ['pull', '--rebase'], { stdio: 'inherit', encoding: 'utf-8' })
@@ -107,7 +112,7 @@
     }
 
     // Final SUMMARY log
-    console.log('') // line break
+    bump.log.break()
     Object.entries(bumpedManifests).forEach(([manifest, versions]) => {
         const [oldVer, newVer] = versions.split(';')
         console.log(`  ± ${manifest} ${
