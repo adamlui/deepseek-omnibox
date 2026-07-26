@@ -22,7 +22,7 @@
     // Import LIBS
     const fs = require('fs'), // to read/write files
           path = require('path'), // to manipulate paths
-        { execSync, spawnSync } = require('child_process') // for git cmds
+        { spawnSync } = require('child_process') // for git cmds
 
     // Init CACHE paths
     const cachePaths = { root: '.cache' }
@@ -86,16 +86,16 @@
 
         // git add/commit/push
         try {
-            execSync(`git add ${Object.keys(bumpedManifests).join(' ')}`)
+            spawnSync(gitCmd, ['add', ...Object.keys(bumpedManifests)], { stdio: 'inherit', encoding: 'utf-8' })
             spawnSync(gitCmd, [
                 '-c', `user.signingkey=${initKudoSyncBot()}`, 'commit', '-n', '-m', commitMsg
             ], { stdio: 'inherit', encoding: 'utf-8' })
             console.log('') // line break
             if (!config.noPush) {
                 bump.log.working('\nPulling latest changes from remote to sync local repository...\n')
-                execSync('git pull --rebase')
+                spawnSync(gitCmd, ['pull', '--rebase'], { stdio: 'inherit', encoding: 'utf-8' })
                 bump.log.working(`\nPushing bump${pluralSuffix} to git...\n`)
-                execSync('git push')
+                spawnSync(gitCmd, ['push'], { stdio: 'inherit', encoding: 'utf-8' })
             }
             bump.log.success(`Success! ${Object.keys(bumpedManifests).length} manifest${pluralSuffix} updated${
                 !config.noCommit ? '/committed' : '' }${ !config.noPush ? '/pushed' : '' } to GitHub`)
