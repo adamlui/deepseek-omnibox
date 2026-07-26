@@ -55,7 +55,9 @@
                 ], { encoding: 'utf8' }).stdout.trim()
                 bump.log.hash(`${latestCommitMsg}\n`)
                 if (/bump.*(?:ersion|manifest)/i.test(latestCommitMsg)) {
-                    console.log('No changes found. Skipping...\n') ; continue }
+                    console.log('No changes found. Skipping...\n')
+                    continue
+                }
             } catch (err) { bump.log.error('Error checking git history\n') }
         }
 
@@ -68,8 +70,10 @@
     // LOG manifests bumped
     const pluralSuffix = Object.keys(bumpedManifests).length > 1 ? 's' : ''
     if (Object.keys(bumpedManifests).length == 0) {
-           bump.log.info('Completed. No manifests bumped.') ; process.exit(0)
-    } else bump.log.success(`${Object.keys(bumpedManifests).length} manifest${pluralSuffix} bumped!`)
+        bump.log.info('Completed. No manifests bumped.')
+        process.exit(0)
+    } else
+        bump.log.success(`${Object.keys(bumpedManifests).length} manifest${pluralSuffix} bumped!`)
 
     // ADD/COMMIT/PUSH bump(s)
     if (!config.noCommit) {
@@ -97,7 +101,9 @@
             }
             bump.log.success(`Success! ${Object.keys(bumpedManifests).length} manifest${pluralSuffix} updated${
                 !config.noCommit ? '/committed' : '' }${ !config.noPush ? '/pushed' : '' } to GitHub`)
-        } catch (err) { bump.log.error(`Git operation failed: ${err.message}`) }
+        } catch (err) {
+            bump.log.error(`Git operation failed: ${err.message}`)
+        }
     }
 
     // Final SUMMARY log
@@ -105,7 +111,9 @@
     Object.entries(bumpedManifests).forEach(([manifest, versions]) => {
         const [oldVer, newVer] = versions.split(';')
         console.log(`  ± ${manifest} ${
-            bump.colors.bw}v${oldVer}${bump.colors.nc} → ${bump.colors.bg}v${newVer}${bump.colors.nc}`)
+            bump.colors.bw}v${oldVer}${bump.colors.nc} → ${
+            bump.colors.bg}v${newVer}${bump.colors.nc}`
+        )
     })
 
 })()
