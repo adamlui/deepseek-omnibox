@@ -74,7 +74,7 @@
 
     // ADD/COMMIT/PUSH bump(s)
     if (!config.noCommit) {
-        bump.log.working(`\nCommitting bump${pluralSuffix} to Git...\n`)
+        bump.log.working(`\nCommitting bump${pluralSuffix} to git...\n`)
 
         // Init commit msg
         let commitMsg = 'Bumped `version`' ; const uniqueVers = {}
@@ -93,7 +93,7 @@
             if (!config.noPush) {
                 bump.log.working('\nPulling latest changes from remote to sync local repository...\n')
                 execSync('git pull --rebase')
-                bump.log.working(`\nPushing bump${pluralSuffix} to Git...\n`)
+                bump.log.working(`\nPushing bump${pluralSuffix} to git...\n`)
                 execSync('git push')
             }
             bump.log.success(`Success! ${Object.keys(bumpedManifests).length} manifest${pluralSuffix} updated${
