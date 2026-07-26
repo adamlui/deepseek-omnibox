@@ -86,7 +86,7 @@
         // git add/commit/push
         try {
             execSync('git add ./**/manifest.json')
-            spawnSync('git', [
+            spawnSync('/usr/bin/git', [
                 '-c', `user.signingkey=${initKudoSyncBot()}`, 'commit', '-n', '-m', commitMsg
             ], { stdio: 'inherit', encoding: 'utf-8' })
             console.log('') // line break
