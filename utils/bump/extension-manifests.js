@@ -36,8 +36,8 @@
     const { initKudoSyncBot } = bump
 
     // Init manifest PATHS
-    const chromiumManifestPath = 'chromium/extension/manifest.json',
-          ffManifestPath = 'firefox/extension/manifest.json'
+    const chromiumManifestPath = 'chromium/extension/manifest.json'
+    const ffManifestPath = 'firefox/extension/manifest.json'
     const manifestPaths = config.chromiumOnly ? [chromiumManifestPath].filter(p => /chrom/i.test(p))
                         : config.ffOnly ? [ffManifestPath].filter(p => /firefox/i.test(p))
                         : [chromiumManifestPath, ffManifestPath]
