@@ -50,10 +50,9 @@
         if (!config.chromiumOnly && !config.ffOnly) {
             console.log(`Checking last commit details for ${platformManifestPath}...`)
             try {
-                const latestCommitMsg = spawnSync(gitCmd,
-                    ['log', '-1', '--format=%s', '--', path.relative(process.cwd(), path.dirname(manifestPath))],
-                    { encoding: 'utf8' }
-                ).stdout.trim()
+                const latestCommitMsg = spawnSync(gitCmd, [
+                    'log', '-1', '--format=%s', '--', path.relative(process.cwd(), path.dirname(manifestPath))
+                ], { encoding: 'utf8' }).stdout.trim()
                 bump.log.hash(`${latestCommitMsg}\n`)
                 if (/bump.*(?:ersion|manifest)/i.test(latestCommitMsg)) {
                     console.log('No changes found. Skipping...\n') ; continue }
