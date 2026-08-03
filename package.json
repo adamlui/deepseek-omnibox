@@ -4,13 +4,13 @@
   "description": "Type @deepseek in address bar to get answers from DeepSeek AI",
   "author": {
     "name": "KudoAI & contributors",
-    "email": "authors@kudoai.com",
-    "url": "https://kudoai.com"
+    "email": "authors@kudoai.org",
+    "url": "https://kudoai.org"
   },
-  "homepage": "https://kudoai.com/deepseekomnibox",
+  "homepage": "https://deepseekomnibox.kudoai.org",
   "bugs": {
     "url": "https://github.com/KudoAI/deepseek-omnibox/issues",
-    "email": "support@kudoai.com"
+    "email": "support@kudoai.org"
   },
   "license": "MIT",
   "funding": [
@@ -54,7 +54,7 @@
     "eslint": "^10.3.0",
     "eslint-plugin-import-x": "^4.17.1",
     "eslint-plugin-regexp": "^3.1.1",
-    "globals": "^17.8.0",
+    "globals": "^17.7.0",
     "husky": "^9.1.7"
   }
 }
