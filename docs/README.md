@@ -1,7 +1,7 @@
 ***
 
 > [!IMPORTANT]  
-> This project has moved to **<https://codeberg.org/adamlui/deepseek-omnibox>**
+> This project has moved to **<https://codeberg.org/KudoAI/deepseek-omnibox>**
 
 ***
 
